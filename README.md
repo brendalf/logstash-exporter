@@ -1,6 +1,6 @@
 ![GitHub](https://img.shields.io/github/license/brendalf/logstash-exporter) ![GitHub go.mod Go version](https://img.shields.io/github/go-mod/go-version/brendalf/logstash-exporter)
 
-> Forked from leroymerlinbr/logstash-exporter but upgrade to go 1.22 in order to fix CVEs with stdlib
+> Forked from leroy-merlin-br/logstash-exporter but upgrade to go 1.22 in order to fix CVEs with stdlib
 
 # logstash-exporter
 
@@ -20,8 +20,6 @@ of reasons:
   [bitnami/bitnami-docker-logstash-exporter](https://github.com/bitnami/bitnami-docker-logstash-exporter) which downloads
   a binary from [their servers](https://github.com/bitnami/bitnami-docker-logstash-exporter/blob/master/7.3/debian-10/Dockerfile#L12),
   which is **super creepy**.
-- Bitnami's project doesn't offer a build for other architectures such as `arm64` and here at Leroy Merlin Brasil we
-  rely heavily on Logstash pods running on Graviton nodes.
 
 ## Run
 
@@ -30,7 +28,7 @@ For pre-built binaries, check the [releases page](https://github.com/brendalf/lo
 ### Docker
 
 ```sh
-docker run leroymerlinbr/logstash_exporter:latest
+docker run brendalf/logstash-exporter:latest
 ```
 
 ### CLI
